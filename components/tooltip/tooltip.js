@@ -18,24 +18,16 @@ export class CustomTooltip extends React.Component {
       className,
       dark
     } = this.props
-    return (<CSSTransition
-      in={active}
-      timeout={{
-        enter: 260,
-        exit: 260
-      }}
-      classNames={{
-       enter: Styles.tooltipTransitionEnter,
-       exit: Styles.tooltipTransitionExit
-      }}
-      unmountOnExit>
-      <_tooltip
-        className={className}
-        position={position}
-        dark={dark}>
-        {children}
-      </_tooltip>
-    </CSSTransition>)
+    return (
+      <CSSTransition in={active} timeout={{ enter: 260, exit: 260 }} classNames={{ enter: Styles.tooltipTransitionEnter, exit: Styles.tooltipTransitionExit }} unmountOnExit>
+        <_tooltip
+          className={className}
+          position={position}
+          dark={dark}>
+          {children}
+        </_tooltip>
+      </CSSTransition>
+    )
   }
 }
 
