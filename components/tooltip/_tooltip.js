@@ -2,8 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import classNames from 'classnames'
 import PropTypes from 'prop-types'
-import Styles from './styles'
-import GlobalStyles from '../../styles/global'
+import Styles from './styles.sass'
+import GlobalStyles from '../../styles/global.sass'
 
 export class _tooltip extends React.Component {
 

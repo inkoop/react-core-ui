@@ -1,6 +1,6 @@
 {
   "name": "react-core-ui",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Collection of basic components.",
   "main": "index.js",
   "scripts": {
