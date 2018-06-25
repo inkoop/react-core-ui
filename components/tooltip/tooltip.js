@@ -5,7 +5,7 @@ import Styles from './styles'
 import _tooltip from './_tooltip'
 import { CSSTransition } from 'react-transition-group'
 
-export class CustomTooltip extends React.Component {
+export class Tooltip extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -31,11 +31,11 @@ export class CustomTooltip extends React.Component {
   }
 }
 
-CustomTooltip.propTypes = {
+Tooltip.propTypes = {
   position: PropTypes.oneOf(['top', 'left', 'right', 'bottom']).isRequired,
   active: PropTypes.bool.isRequired,
   children: PropTypes.oneOfType([ PropTypes.array, PropTypes.object, PropTypes.string ]).isRequired,
   dark: PropTypes.bool
 }
 
-export default CustomTooltip
+export default Tooltip
