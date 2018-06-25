@@ -1,6 +1,9 @@
 # React Core UI
 
-## Collection of basic minimalistic components
+## Collection of basic components.
+### Components Included:
+- Modal
+- Tooltip
 
 ### TODO
 - [ ] Finish setting up `package.json`.
