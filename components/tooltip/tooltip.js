@@ -1,7 +1,7 @@
 import React from 'react'
 import classNames from 'classnames'
 import PropTypes from 'prop-types'
-import Styles from './styles.sass'
+import Styles from './styles'
 import _tooltip from './_tooltip'
 import { CSSTransition } from 'react-transition-group'
 
@@ -26,7 +26,7 @@ export class CustomTooltip extends React.Component {
       }}
       classNames={{
        enter: Styles.tooltipTransitionEnter,
-       exit: Styles.tooltipTransitionExit,
+       exit: Styles.tooltipTransitionExit
       }}
       unmountOnExit>
       <_tooltip

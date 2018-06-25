@@ -1,7 +1,7 @@
 import React from 'react'
 import classNames from 'classnames'
 import PropTypes from 'prop-types'
-import Styles from './styles.sass'
+import Styles from './styles'
 import _modal from './_modal'
 import { CSSTransition } from 'react-transition-group'
 
@@ -29,7 +29,7 @@ export class Modal extends React.Component {
       }}
       classNames={{
        enter: Styles.modalTransitionEnter,
-       exit: Styles.modalTransitionExit,
+       exit: Styles.modalTransitionExit
       }}
       unmountOnExit>
       <_modal
