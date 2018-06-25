@@ -1,0 +1,34 @@
+{
+  "name": "react-core-ui",
+  "version": "1.0.0",
+  "description": "Collection of basic components.",
+  "main": "index.js",
+  "scripts": {
+    "test": "exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamesmarrs/react-core-ui.git"
+  },
+  "keywords": [
+    "react",
+    "react-component",
+    "material",
+    "components",
+    "modal",
+    "tooltip"
+  ],
+  "author": "James Marrs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jamesmarrs/react-core-ui/issues"
+  },
+  "homepage": "https://github.com/jamesmarrs/react-core-ui#readme",
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "react-transition-group": "^2.2.0",
+    "prop-types": "15.5.10",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
+  }
+}
