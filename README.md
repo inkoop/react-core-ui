@@ -9,6 +9,7 @@
 
 ### TODO
 - [ ] Finish setting up `package.json`.
+- [ ] Add `top`, `bottom`, `right` positions for tooltips
 - [ ] Add jest testing suite.
 - [ ] Add table component.
 - [ ] Add input component.
