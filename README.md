@@ -2,8 +2,10 @@
 
 ## Collection of basic components.
 ### Components Included:
-- Modal
-- Tooltip
+- Modal `import { Modal } from 'react-core-ui'`
+- Tooltip `import { Tooltip } from 'react-core-ui'`
+
+`npm install react-core-ui`
 
 ### TODO
 - [ ] Finish setting up `package.json`.

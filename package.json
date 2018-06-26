@@ -1,6 +1,6 @@
 {
   "name": "react-core-ui",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Collection of basic components.",
   "main": "index.js",
   "scripts": {
@@ -26,7 +26,7 @@
   "homepage": "https://github.com/jamesmarrs/react-core-ui#readme",
   "dependencies": {
     "classnames": "^2.2.6",
-    "prop-types": "15.5.10",
+    "prop-types": "^15.6.2",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-transition-group": "^2.2.0"
@@ -38,5 +38,12 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-3": "^6.24.1",
     "npx": "^10.2.0"
+  },
+  "peerDependencies": {
+    "classnames": "^2.2.6",
+    "prop-types": "^15.6.2",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-transition-group": "^2.2.0"
   }
 }
