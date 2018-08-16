@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 import classNames from 'classnames'
 import PropTypes from 'prop-types'
 import Styles from './styles'
-import GlobalStyles from 'styles/global'
+import GlobalStyles from '../../styles/global'
 
 export class _modal extends React.Component {
   constructor(props) {
