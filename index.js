@@ -1,5 +1,5 @@
-import { Modal } from "./lib/modal"
-import { Tooltip } from "./lib/tooltip"
+import { Modal } from "./components/modal"
+import { Tooltip } from "./components/tooltip"
 
 export {
   Modal,
