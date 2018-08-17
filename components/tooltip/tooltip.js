@@ -44,7 +44,7 @@ export class Tooltip extends React.Component {
 Tooltip.propTypes = {
   position: PropTypes.oneOf(['top', 'left', 'right', 'bottom']).isRequired,
   active: PropTypes.bool.isRequired,
-  children: PropTypes.oneOfType([ PropTypes.array, PropTypes.object, PropTypes.string ]).isRequired,
+  children: PropTypes.oneOfType([ PropTypes.object, PropTypes.string ]).isRequired,
   dark: PropTypes.bool
 }
 

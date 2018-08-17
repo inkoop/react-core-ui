@@ -28,7 +28,7 @@ export class _tooltip extends React.Component {
 }
 
 _tooltip.propTypes = {
-  children: PropTypes.oneOfType([ PropTypes.array, PropTypes.object, PropTypes.string ]).isRequired,
+  children: PropTypes.oneOfType([ PropTypes.object, PropTypes.string ]).isRequired,
   position: PropTypes.oneOf(['top', 'left', 'right', 'bottom']).isRequired,
   className: PropTypes.string,
   dark: PropTypes.bool

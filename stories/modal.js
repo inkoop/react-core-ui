@@ -2,6 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links'
+import { withInfo } from '@storybook/addon-info';
 import { Modal } from '../components/modal';
 import { Tooltip } from '../components/tooltip';
 
@@ -31,6 +32,31 @@ class ModalWrapper extends React.Component {
 }
 
 storiesOf('Modal', module)
-  .add('Plain Modal', () => (
+  .addDecorator(withInfo({
+    header: false,
+    text: 'Modal - For the best transition, ensure your `<body />` tag has `margin: 0` set on it.',
+    inline: true
+  }))
+  .add('Closed', () => (
+    <Modal
+      close={action('*close clicked*')}
+      onEscKeyDown={action('*esc key pressed*')}
+      onOverlayClick={action('*overlay clicked*')}
+      active={false}>
+      <h3>Modal Example</h3>
+      <p>Some nice modal text here!</p>
+    </Modal>
+  ))
+  .add('Open', () => (
+    <Modal
+      close={action('*close clicked*')}
+      onEscKeyDown={action('*esc key pressed*')}
+      onOverlayClick={action('*overlay clicked*')}
+      active={true}>
+      <h3>Modal Example</h3>
+      <p>Some nice modal text here!</p>
+    </Modal>
+  ))
+  .add('Transitions', () => (
     <ModalWrapper />
   ))
