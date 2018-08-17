@@ -9,16 +9,43 @@ export class _tooltip extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = { }
+    this.state = {
+      position: props.position
+    }
+  }
+
+  componentDidMount() {
+    const {
+      position
+    } = this.state
+    const dem = ReactDOM.findDOMNode(this).getBoundingClientRect()
+    if (typeof(window) != "undefined") {
+      switch(position) {
+        case 'right':
+          if ((dem.x + dem.width) > window.innerWidth) { this.setState({ position: 'left' }) }
+          break
+        case 'left':
+          if (dem.x < 0) { this.setState({ position: 'right' }) }
+          break
+        case 'top':
+          if (dem.y < 0) { this.setState({ position: 'bottom' }) }
+          break
+        case 'bottom':
+          if ((dem.y + dem.height) > window.innerHeight) { this.setState({ position: 'top' }) }
+          break
+      }
+    }
   }
 
   render() {
     const {
       children,
       className,
-      position,
       dark
     } = this.props
+    const {
+      position
+    } = this.state
     return (
       <div className={classNames(Styles.base, className, Styles[position], { [Styles.dark]: dark })}>
         {children}

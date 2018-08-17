@@ -15,17 +15,18 @@ class TooltipWrapper extends React.Component {
   }
 
   render() {
+    // style={{ position: 'relative', margin: '100px auto', display: 'block', textAlign: 'center', maxWidth: '70px' }}>
     return (
       <div>
         <span
           onMouseEnter={() => { this.setState({ active: true }) }}
           onMouseLeave={() => { this.setState({ active: false }) }}
-          style={{ position: 'relative', margin: '100px auto', display: 'block', textAlign: 'center', maxWidth: '70px' }}>
+          style={{ position: 'relative', display: 'block', float: 'right', maxWidth: '70px' }}>
           Some Text
           <Tooltip
             active={this.state.active}
-            position={'right'}>
-            Hello!
+            position={'left'}>
+            Hello! there good sir how are you doing today
           </Tooltip>
         </span>
       </div>
