@@ -4,7 +4,7 @@
 
 ## Components Included:
 ## Modal
-`import { Modal } from 'react-core-ui'`
+`import { Modal } from 'react-core-ui/lib/modal'`
 Basic Usage
 ```
   <Modal
@@ -24,7 +24,7 @@ Basic Usage
   - onEscKeyDown ~ required: no ~ type: func
   - onOverlayClick ~ required: no ~ type: func
 ## Tooltip
-`import { Tooltip } from 'react-core-ui'`
+`import { Tooltip } from 'react-core-ui/lib/tooltip'`
 Basic Usage
 ```
   <span

@@ -1,0 +1,32 @@
+@import "spa/shared/styles/base"
+
+.base
+  .layoutContainer
+    z-index: 1
+    box-sizing: border-box
+    // border-top: 1px solid $dark-grey
+    background-color: $light-bg
+    height: 100%
+    position: absolute
+    // left: $sideNavigationWidth
+    left: $side-navigation-width
+    right: 0
+    bottom: 0
+    top: 0
+    -webkit-overflow-scrolling: touch
+    overflow: scroll
+    &.topBanner
+      height: calc(100% - #{$bannerHeight})
+      top: $bannerHeight
+    @media only screen and (max-width: 768px)
+      left: 0
+      top: $top-navigation-width
+  &.blankLayout
+    .layoutContainer
+      padding: 0
+      top: 0
+      left: 0
+      height: 100%
+      &.topBanner
+        height: calc(100% - #{$bannerHeight})
+        top: $bannerHeight
