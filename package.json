@@ -1,6 +1,6 @@
 {
   "name": "react-core-ui",
-  "version": "1.0.19",
+  "version": "1.0.20",
   "description": "Collection of basic components.",
   "main": "./lib",
   "module": "./components",
