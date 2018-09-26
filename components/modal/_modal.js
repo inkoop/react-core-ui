@@ -85,7 +85,6 @@ export class _modal extends React.Component {
 }
 
 _modal.propTypes = {
-  children: PropTypes.oneOfType([ PropTypes.object, PropTypes.array, PropTypes.string ]).isRequired,
   overlayClassName: PropTypes.string,
   modalClassName: PropTypes.string,
   close: PropTypes.func,
