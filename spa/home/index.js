@@ -1,9 +1,12 @@
 import React from 'react'
+import { Layout } from 'spa/layout'
 import Home from './home'
 
 const display = () => {
   return (
-    <Home />
+    <Layout>
+      <Home />
+    </Layout>
   )
 }
 

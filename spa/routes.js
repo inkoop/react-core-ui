@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, Switch } from 'react-router-dom'
-import { HomeDisplay } from 'app/home'
+import { HomeDisplay } from 'spa/home'
 
 export default () => {
   return (

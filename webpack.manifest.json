@@ -1,0 +1,9 @@
+{
+  "app": {
+    "js": "app.js",
+    "css": "app.css"
+  },
+  "compatibility": {
+    "js": "compatibility.js"
+  }
+}

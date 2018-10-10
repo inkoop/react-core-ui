@@ -8,12 +8,12 @@ module.exports = {
     app: [
       'webpack-dev-server/client?http://localhost:8080',
       'webpack/hot/only-dev-server',
-      path.resolve(__dirname, './app/entry.js')
+      path.resolve(__dirname, './spa/entry.js')
     ],
     compatibility: [
       'webpack-dev-server/client?http://localhost:8080',
       'webpack/hot/only-dev-server',
-      path.resolve(__dirname, './app/compatibility.js')
+      path.resolve(__dirname, './spa/compatibility.js')
     ]
   },
   output: {
@@ -45,7 +45,7 @@ module.exports = {
       {
         test: /^((?!\.plugin.).)*(css|scss|sass)$/,
         exclude: /node_modules/,
-        include: /components/,
+        include: [/components/, /spa/, /styles/],
         use: [
           "style-loader",
           {
@@ -61,7 +61,7 @@ module.exports = {
       },
       {
         test: /^((?!\.plugin.).)*(css|scss|sass)$/,
-        exclude: /components/,
+        exclude: [/components/, /spa/, /styles/],
         include: /node_modules/,
         use: [
           {
@@ -91,7 +91,7 @@ module.exports = {
       {
         test: /\.plugin.(css|scss|sass)$/,
         exclude: /node_modules/,
-        include: /components/,
+        include: [/components/, /spa/, /styles/],
         use: [
           "style-loader",
           {
@@ -114,8 +114,8 @@ module.exports = {
   },
   resolve: {
     alias: {
-      "config": path.resolve(__dirname, './config.js'),
-      "app": path.resolve(__dirname, './app')
+      "spa": path.resolve(__dirname, './spa'),
+      "styles": path.resolve(__dirname, './styles')
     },
     extensions: ['.js', '.jsx', '.sass', '.scss', '.css', '.png', '.jpg', '.svg']
   },

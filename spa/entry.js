@@ -17,8 +17,8 @@ const renderApp = (Component) => {
 renderApp(Routes)
 
 if (module.hot) {
-  module.hot.accept('app/routes', () => {
-    const newRoutes = require('app/routes').default;
+  module.hot.accept('spa/routes', () => {
+    const newRoutes = require('spa/routes').default;
     renderApp(newRoutes)
   })
 }
