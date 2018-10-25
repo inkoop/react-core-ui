@@ -20,9 +20,9 @@ export class Tooltip extends React.Component {
       className,
       dark
     } = this.props
-    return (
+    return (disabled) ? null : (
       <CSSTransition
-        in={(active || false) && !((disabled ? false : true) || false)}
+        in={(active || false)}
         timeout={{
           enter: 260,
           exit: 260
