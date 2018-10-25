@@ -22,7 +22,7 @@ export class Tooltip extends React.Component {
     } = this.props
     return (
       <CSSTransition
-        in={(active || false) && (!disabled || true)}
+        in={(active || false) && !(disabled || false)}
         timeout={{
           enter: 260,
           exit: 260

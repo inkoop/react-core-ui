@@ -41,11 +41,11 @@ Basic Usage
   </span>
 ```
 #### Props
-  - disabled ~ required: no ~ type: bool
-  - active ~ required: yes ~ type: bool
+  - disabled ~ required: no ~ type: bool default: false
+  - active ~ required: no ~ type: bool default: false
   - children ~ required: yes ~ type: object | string
-  - position ~ required: yes ~ type: string ('top' | 'left' | 'right' | 'bottom')
-  - dark ~ required: no ~ type: bool
+  - position ~ required: no ~ type: string ('top' | 'left' | 'right' | 'bottom') default: bottom
+  - dark ~ required: no ~ type: bool default: light
 
 ### TODO
 - [x] Added Modal
