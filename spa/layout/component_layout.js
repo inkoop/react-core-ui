@@ -2,10 +2,11 @@ import React from 'react'
 import classNames from 'classnames'
 import PropTypes from 'prop-types'
 import { Navigation } from 'spa/navigation'
+import { ComponentNavigation } from 'spa/component_navigation'
 import Styles from './styles'
 import GlobalStyles from 'styles/global'
 
-export class Layout extends React.Component {
+export class ComponentLayout extends React.Component {
 
   constructor(props) {
     super(props)
@@ -18,8 +19,9 @@ export class Layout extends React.Component {
 
   render() {
     return (
-      <div className={Styles.base}>
+      <div className={classNames(Styles.base, Styles.componentLayout)}>
         <Navigation />
+        <ComponentNavigation />
         <div className={classNames("layout-container", Styles.layoutContainer)}>
           {this.props.children}
         </div>
@@ -28,8 +30,8 @@ export class Layout extends React.Component {
   }
 }
 
-Layout.propTypes = {
+ComponentLayout.propTypes = {
 
 }
 
-export default Layout
+export default ComponentLayout

@@ -114,6 +114,7 @@ module.exports = {
   },
   resolve: {
     alias: {
+      "components": path.resolve(__dirname, './components'),
       "spa": path.resolve(__dirname, './spa'),
       "styles": path.resolve(__dirname, './styles')
     },

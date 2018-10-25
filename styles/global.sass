@@ -1,3 +1,5 @@
+@import "styles/base"
+
 *
   font-family: 'Montserrat', sans-serif
   outline: none
@@ -14,3 +16,9 @@ body
     left: 0
     right: 0
     bottom: 0
+  a
+    text-decoration: none
+    color: $light-black
+    @include transition($default-transition)
+    &:hover
+      color: $black

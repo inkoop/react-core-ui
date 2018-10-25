@@ -41,13 +41,13 @@ Basic Usage
   </span>
 ```
 #### Props
+  - disabled ~ required: no ~ type: bool
   - active ~ required: yes ~ type: bool
   - children ~ required: yes ~ type: object | string
   - position ~ required: yes ~ type: string ('top' | 'left' | 'right' | 'bottom')
   - dark ~ required: no ~ type: bool
 
 ### TODO
-- [x] Added Storybookjs
 - [x] Added Modal
 - [ ] Browser Compatibility (Modal)
 - [x] Added Tooltip

@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 import Styles from "./styles";
 import { withRouter } from "react-router-dom";
 
-export class Navigation extends React.Component {
+export class ComponentNavigation extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -14,28 +14,27 @@ export class Navigation extends React.Component {
     const { history } = this.props;
     return (
       <div className={Styles.base}>
-        <span>React Core</span>
-        <ul className={Styles.links}>
+        <ul>
           <li>
             <a
-              href="/"
+              href="/components/modal"
               onClick={e => {
                 e.preventDefault();
-                history.push("/");
+                history.push("/components/modal");
               }}
             >
-              Home
+              Modal
             </a>
           </li>
           <li>
             <a
-              href="/components"
+              href="/components/tooltip"
               onClick={e => {
                 e.preventDefault();
-                history.push("/components");
+                history.push("/components/tooltip");
               }}
             >
-              Components
+              Tooltip
             </a>
           </li>
         </ul>
@@ -44,8 +43,8 @@ export class Navigation extends React.Component {
   }
 }
 
-Navigation.propTypes = {
+ComponentNavigation.propTypes = {
   history: PropTypes.object.isRequired
 };
 
-export default withRouter(Navigation);
+export default withRouter(ComponentNavigation);

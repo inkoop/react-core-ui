@@ -1,8 +1,20 @@
 @import "styles/base"
 
 .base
+  position: relative
+  z-index: 2
   color: $light-black
   background-color: $light-grey
   padding: 20px
   font-size: 20px
   @include box-shadow($default-box-shadow)
+  .links
+    float: right
+    list-style: none
+    margin: 0
+    padding: 0
+    li
+      padding-left: 10px
+      float: left
+    a
+      font-size: 16px

@@ -13,6 +13,7 @@ export class Tooltip extends React.Component {
 
   render() {
     const {
+      disabled,
       active,
       position,
       children,
@@ -21,7 +22,7 @@ export class Tooltip extends React.Component {
     } = this.props
     return (
       <CSSTransition
-        in={active}
+        in={(active || false) && (!disabled || true)}
         timeout={{
           enter: 260,
           exit: 260
@@ -33,7 +34,7 @@ export class Tooltip extends React.Component {
         unmountOnExit>
         <_tooltip
           className={className}
-          position={position}
+          position={position || 'bottom'}
           dark={dark}>
           {children}
         </_tooltip>
@@ -43,8 +44,9 @@ export class Tooltip extends React.Component {
 }
 
 Tooltip.propTypes = {
-  position: PropTypes.oneOf(['top', 'left', 'right', 'bottom']).isRequired,
-  active: PropTypes.bool.isRequired,
+  disabled: PropTypes.bool,
+  position: PropTypes.oneOf(['top', 'left', 'right', 'bottom']),
+  active: PropTypes.bool,
   dark: PropTypes.bool
 }
 

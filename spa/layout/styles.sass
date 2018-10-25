@@ -3,10 +3,11 @@
 .base
   height: 100%
   .layoutContainer
-    z-index: 1
+    margin-top: 64px
+    z-index: 0
     box-sizing: border-box
     background-color: $white
-    height: 100%
+    height: calc(100% - $navigation-height)
     position: absolute
     left: 0
     right: 0
@@ -20,3 +21,9 @@
       top: 0
       left: 0
       height: 100%
+  &.componentLayout
+    .layoutContainer
+      padding: 0
+      top: 0
+      left: $component-navigation-width
+      height: calc(100% - $navigation-height)
