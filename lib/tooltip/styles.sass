@@ -54,22 +54,18 @@
     &.tooltipTransitionEnter
       @keyframes tooltipFadeInRight
         0%
-          z-index: 1000
           opacity: 0
           @include transform(translateY(-50%) translateX(calc(100% - 8px)))
         100%
-          z-index: 1000
           opacity: 1
           @include transform(translateY(-50%) translateX(100%))
       @include animation(tooltipFadeInRight 0.28s ease-in)
     &.tooltipTransitionExit
       @keyframes tooltipFadeOutRight
         0%
-          z-index: 1000
           opacity: 1
           @include transform(translateY(-50%) translateX(100%))
         100%
-          z-index: 1000
           opacity: 0
           @include transform(translateY(-50%) translateX(calc(100% - 8px)))
       @include animation(tooltipFadeOutRight 0.28s ease-in)
@@ -111,22 +107,18 @@
     &.tooltipTransitionEnter
       @keyframes tooltipFadeInLeft
         0%
-          z-index: 1000
           opacity: 0
           @include transform(translateY(-50%) translateX(calc(-100% + 8px)))
         100%
-          z-index: 1000
           opacity: 1
           @include transform(translateY(-50%) translateX(-100%))
       @include animation(tooltipFadeInLeft 0.28s ease-in)
     &.tooltipTransitionExit
       @keyframes tooltipFadeOutLeft
         0%
-          z-index: 1000
           opacity: 1
           @include transform(translateY(-50%) translateX(-100%))
         100%
-          z-index: 1000
           opacity: 0
           @include transform(translateY(-50%) translateX(calc(-100% + 8px)))
       @include animation(tooltipFadeOutLeft 0.28s ease-in)
@@ -168,22 +160,18 @@
     &.tooltipTransitionEnter
       @keyframes tooltipFadeInBottom
         0%
-          z-index: 1000
           opacity: 0
           @include transform(translateY(calc(100% - 8px)) translateX(-50%))
         100%
-          z-index: 1000
           opacity: 1
           @include transform(translateY(100%) translateX(-50%))
       @include animation(tooltipFadeInBottom 0.28s ease-in)
     &.tooltipTransitionExit
       @keyframes tooltipFadeOutBottom
         0%
-          z-index: 1000
           opacity: 1
           @include transform(translateY(100%) translateX(-50%))
         100%
-          z-index: 1000
           opacity: 0
           @include transform(translateY(calc(100% - 8px)) translateX(-50%))
       @include animation(tooltipFadeOutBottom 0.28s ease-in)
@@ -225,22 +213,18 @@
     &.tooltipTransitionEnter
       @keyframes tooltipFadeInTop
         0%
-          z-index: 1000
           opacity: 0
           @include transform(translateY(calc(-100% + 8px)) translateX(-50%))
         100%
-          z-index: 1000
           opacity: 1
           @include transform(translateY(-100%) translateX(-50%))
       @include animation(tooltipFadeInTop 0.28s ease-in)
     &.tooltipTransitionExit
       @keyframes tooltipFadeOutTop
         0%
-          z-index: 1000
           opacity: 1
           @include transform(translateY(-100%) translateX(-50%))
         100%
-          z-index: 1000
           opacity: 0
           @include transform(translateY(calc(-100% + 8px)) translateX(-50%))
       @include animation(tooltipFadeOutTop 0.28s ease-in)
